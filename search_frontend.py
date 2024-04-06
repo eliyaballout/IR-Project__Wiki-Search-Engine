@@ -60,32 +60,32 @@ app.config['JSONIFY_PRETTYPRINT_REGULAR'] = False
 
 
 # download all indexes
-if not os.path.exists('body_index.pkl'):
+if not os.path.exists('/Indexes/body_index.pkl'):
   body_inv_index = InvertedIndex.read_index('body', 'body_index', BUCKET_NAME)
 else:
-  body_inv_index = load_index("body_index.pkl")
+  body_inv_index = load_index("/Indexes/body_index.pkl")
   print("Body index file already exists.")
 
-if not os.path.exists('title_index.pkl'):
+if not os.path.exists('/Indexes/title_index.pkl'):
   title_inv_index = InvertedIndex.read_index('title', 'title_index', BUCKET_NAME)
 else:
-  title_inv_index = load_index("title_index.pkl")
+  title_inv_index = load_index("/Indexes/title_index.pkl")
   print("Title index file already exists.")
 
-if not os.path.exists('anchor_index.pkl'):
+if not os.path.exists('/Indexes/anchor_index.pkl'):
   anchor_inv_index = InvertedIndex.read_index('anchor', 'anchor_index', BUCKET_NAME)
 else:
-  anchor_inv_index =  load_index("anchor_index.pkl")
+  anchor_inv_index =  load_index("/Indexes/anchor_index.pkl")
   print("Anchor index file already exists.")
 
 
 # download page rank to pr varible
-if not os.path.exists('pr.json'):
+if not os.path.exists('/Indexes/pr.json'):
   os.system(f"gsutil cp gs://{BUCKET_NAME}/pr/pr.json .")
 else:
   print("Page rank file already exists.")
 
-with open('pr.json') as prJSON:
+with open('/Indexes/pr.json') as prJSON:
   pr = json.load(prJSON)
 
 
