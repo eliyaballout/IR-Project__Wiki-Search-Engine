@@ -80,6 +80,9 @@ Query = "take on me"
 ```
 http://127.0.0.1:8080/search?query=take+on+me
 ```
+<br>
+
+![take on me](https://github.com/eliyaballout/IR-Project__Wiki-Search-Engine/assets/94072460/2220efbf-5a68-4a61-8172-02963cc43013)
 <br><br>
 
 
