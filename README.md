@@ -26,7 +26,7 @@ This project is a search engine that uses information retrieval techniques to se
 
 5. **[search_frontend_quality.py](https://github.com/eliyaballout/IR-Project__Wiki-Search-Engine/blob/main/search_frontend_quality.py):** Allowes to test different weights on (title, body, anchor, page rank) and see how different measurements (MAP, Recall, Precision, R-Precision) changes respectively.
 
-<br><br>
+<br>
 
 
 
